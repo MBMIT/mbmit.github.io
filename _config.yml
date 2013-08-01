@@ -1,10 +1,11 @@
 name: MBM | make your ideas work
 work: Software Development & ICT Consulting
 
-safe:        false
+safe:        true
 auto:        true
 server:      false
 server_port: 4000
+base_url: "http://vanhonit.github.io/vanhonit/"
 
 source:      .
 destination: ./_site
