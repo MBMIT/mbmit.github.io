@@ -32,7 +32,7 @@ margin-left:-15px
 }
 #global-footer #footer-nav {
 max-width: 1170px;
-margin: 0px auto 80px auto;
+margin: 120px auto 80px auto;
 border-bottom: #222426 1px solid;
 position: relative;
 text-transform: uppercase;
@@ -55,10 +55,13 @@ font-size:0.8em
     display:block;
     padding :10px 15px;
 }
-#footer-menu li a:hover{
+#footer-menu li a:hover, .contact a:hover{
     text-decoration:none;
     color:#e2edf2;
     background:inherit
+}
+.jumbotron{
+margin-bottom:0!important
 }
 .careers a{
 padding-right:0!important;
@@ -69,3 +72,7 @@ font-size: 1.5em;
 #global-footer #social-menu li a {
 padding: 10px;
 }
+.contact a{
+color:#5a5a5a;
+}
+
