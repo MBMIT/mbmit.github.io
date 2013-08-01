@@ -19,14 +19,12 @@ body {
   z-index: 10;
 }
 
-
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
-  margin-top:20px
+  margin-top:20px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -67,15 +65,10 @@ body {
 
 /* Featurettes
 ------------------------- */
-
 .featurette {
-  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+padding-top: 120px;
+overflow: hidden;
 }
-.featurette-image {
-  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-}
-
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
 .featurette-image.pull-left {
   margin-right: 40px;
@@ -83,7 +76,12 @@ body {
 .featurette-image.pull-right {
   margin-left: 40px;
 }
-
+.featurette-divider {
+margin: 80px 0;
+}
+.featurette-image {
+margin-top: -120px;
+}
 /* Thin out the marketing headings */
 .featurette-heading {
   font-size: 50px;
