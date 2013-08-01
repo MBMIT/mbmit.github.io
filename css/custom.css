@@ -1,0 +1,38 @@
+/*
+ *Custom CSS
+ *
+ */
+.work{
+    display:inline-block;
+    color:#030cc7
+}
+.breadcrumb{background-color:white}
+.row{
+border:1px solid #ccc;
+background-color:#134f5c;
+color:white
+}
+.first{
+border-right:1px solid #ccc
+}
+.col-lg-6{
+border-top:1px solid #ccc
+}
+.feature-block{
+    display:block;
+    background-color:#a4c2f4
+}
+footer{
+background-color:#434343!important;
+}
+footer .address, footer .contact, footer .footer-menu{
+display:block;
+padding:20px 0;
+min-height:130px
+}
+.address, .contact{
+border-right:1px solid white
+}
+.footer-menu .breadcrumb{
+    background-color:#434343
+}

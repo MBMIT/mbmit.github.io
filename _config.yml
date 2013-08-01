@@ -1,2 +1,18 @@
-name: Vanhonit's Blog
+name: MBM | make your ideas work
+work: Software Development & ICT Consulting
+
+safe:        false
+auto:        true
+server:      false
+server_port: 4000
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+
+future:      true
+lsi:         false
+#markdown: rdiscount
 pygments: true
+
+#exclude: ['lib']
