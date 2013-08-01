@@ -12,9 +12,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{ site.baseurl }}css/bootstrap.css" rel="stylesheet">
-
     <link href="{{ site.baseurl }}css/carousel.css" rel="stylesheet">
     <link href="{{ site.baseurl }}css/custom.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}css/colorbox.css" rel="stylesheet">
   </head>
 
   <body>
@@ -85,7 +85,7 @@
 
     <div class="marketing">
       <ul class="breadcrumb text-center">
-      <li><a >Contact From</a><span class="divider"></span></li>
+      <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact From</a><span class="divider"></span></li>
       <li><a href="mailto:info@mbm.vn">Email</a> <span class="divider"></span></li>
       <li class="active"><a href="#">Phone: +84 710 3 834 283</a></li>
       </ul>
@@ -145,36 +145,90 @@
 </div>
 
       <!-- FOOTER -->
-      <footer class="row">
+      <!--<footer class="row">
         <div class="container">
-        <div class="col-lg-4 address">
-            <p>
-            MBM International<br>
-            Công ty TNHH Thương Mại Dịch Vụ Truyền Thông Mắt Biếc<br>
-            93 Mau Than Street, Xuan Khanh, Ninh Kieu,
-            9000 Can Tho City, Vietnam
-            </p>
-        </div>
-        <div class="col-lg-4 contact">
-            <p>
-            Phone: +84 710 3 834 283<br>
-            Fax: +49 3 21 21 21 89 71<br>
-            Email: <a href="mailto:info@mbm.vn">info@mbm.vn</a>
-            </p>
+            <div class="col-lg-6 address">
+                <p>
+                MBM International<br>
+                Công ty TNHH Thương Mại Dịch Vụ Truyền Thông Mắt Biếc<br>
+                93 Mau Than Street, Xuan Khanh, Ninh Kieu,
+                9000 Can Tho City, Vietnam
+                </p>
             </div>
-        <div class="col-lg-4 footer-menu">
-            <ul class="breadcrumb text-center">
-                <li><a >Home</a><span class="divider"></span></li>
-                <li><a>About</a></a> <span class="divider"></span></li>
-                <li><a>Contact</a><span class="divider"></span></li>
-                <li><a>Careers</a></li>
-      </ul></div>
+            <div class="col-lg-6 contact">
+                <p>
+                Phone: +84 710 3 834 283<br>
+                Fax: +49 3 21 21 21 89 71<br>
+                Email: <a href="mailto:info@mbm.vn">info@mbm.vn</a>
+                </p>
+            </div>
+            <div id="footer-nav">
+                <ul  id="footer-menu" >
+                    <li><a >Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                    <li class='careers'><a>Careers</a></li>
+                </ul>
+        </div>
+        <div class="clearfix"></div>
+        <ul id="social-menu">
+            <li class="github"><a href="https://github.com/tryghost"><span class="hidden">Github</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/tryghost"><span class="hidden">Twitter</span></a></li>
+            <li class="gplus"><a href="https://plus.google.com/u/0/b/114465948129362706086/114465948129362706086/posts"><span class="hidden">Google+</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/TryGhostApp"><span class="hidden">Facebook</span></a></li>
+            <li class="love"><a data-toggle="modal" href="#love"><span class="hidden">Made for Love</span></a></li>
+        </ul>
       </div>
-      </footer>
-
+      </footer>-->
     </div>
+
+    <footer id="global-footer">
+        <div class="container">
+            <div class="col-lg-6 address">
+                <p>
+                MBM International<br>
+                Công ty TNHH Thương Mại Dịch Vụ Truyền Thông Mắt Biếc<br>
+                93 Mau Than Street, Xuan Khanh, Ninh Kieu,
+                9000 Can Tho City, Vietnam
+                </p>
+            </div>
+            <div class="col-lg-6 contact">
+                <p>
+                Phone: +84 710 3 834 283<br>
+                Fax: +49 3 21 21 21 89 71<br>
+                Email: <a href="mailto:info@mbm.vn">info@mbm.vn</a>
+                </p>
+            </div>
+        </div>
+    <nav id="footer-nav" role="navigation">
+        <ul id="footer-menu">
+             <ul  id="footer-menu" >
+                    <li><a href="{{ site.baseurl }}" >Home</a></li>
+                    <li><a >About</a></li>
+                    <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact</a></li>
+                    <li class='careers'><a>Careers</a></li>
+                </ul>
+        </ul>
+        <div class="clearfix"></div>
+        <!--<ul id="social-menu">
+            <li class="github"><a href="https://github.com/tryghost"><span class="hidden">Github</span></a></li>
+            <li class="twitter"><a href="https://twitter.com/tryghost"><span class="hidden">Twitter</span></a></li>
+            <li class="gplus"><a href="https://plus.google.com/u/0/b/114465948129362706086/114465948129362706086/posts"><span class="hidden">Google+</span></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/TryGhostApp"><span class="hidden">Facebook</span></a></li>
+            <li class="love"><a data-toggle="modal" href="#love"><span class="hidden">Made for Love</span></a></li>
+        </ul>-->
+    </nav>
+    <div class="clearfix"></div>
+    </footer>
     <script src="{{ site.baseurl }}js/jquery.js"></script>
     <script src="{{ site.baseurl }}js/bootstrap.js"></script>
     <script src="{{ site.baseurl }}js/holder.js"></script>
+    <script src="{{ site.baseurl }}js/jquery.colorbox-min.js"></script>
+    <script>
+        $(document).ready(function(){
+				//$(".contact").colorbox();
+                $(".contact").colorbox({iframe:true, width:"440px", height:"550px"});
+			});
+    </script>
   </body>
 </html>
