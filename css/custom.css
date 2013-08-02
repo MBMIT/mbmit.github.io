@@ -33,9 +33,7 @@ footer .address, footer .contact, footer .footer-menu {
   padding: 20px;
   font-size: 0.85em;
   background: #18191b;
-  border-bottom: #0a0a0a 5px solid;
-  margin-right: -15px;
-  margin-left: -15px; }
+  border-bottom: #0a0a0a 5px solid; }
 
 #global-footer #footer-nav {
   max-width: 1170px;
