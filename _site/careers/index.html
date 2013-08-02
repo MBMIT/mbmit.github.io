@@ -12,34 +12,52 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/colorbox.css" rel="stylesheet">
+    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
   </head>
 
   <body>
+      <!-- NAVBAR
+    ================================================== -->
     <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
-        <img src="css/img/mbm.png" width=245 height=50/>
-        <h3 class=work>Software Development & ICT Consulting</h3>
-      </div>
-    </div>
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="http://getbootstrap.com/2.3.2/examples/carousel.html#">MBM Software Development</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact</a></li>
+                <li class='careers' ><a href="careers">Careers</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
 
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
       <div class="carousel-inner">
         <div class="item active">
           <img data-src="holder.js/1500x500/auto/#777:#7a7a7a/text:Interview" alt="">
           <div class="container">
             <div class="carousel-caption">
+              <h1>Interview</h1>
               <p>Software Development and Outsourcing, Supporting your business with developers adapted to a global workflow - Development, Web, Mobile, Desktop, Hardware,...</p>
             </div>
           </div>
@@ -73,14 +91,20 @@
         </div>
       </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
     </div><!-- /.carousel -->
-    <ul class="breadcrumb text-center">
-      <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact From</a><span class="divider"></span></li>
-      <li><a href="mailto:info@mbm.vn">Email</a> <span class="divider"></span></li>
-      <li class="active"><a href="#">Phone: +84 710 3 834 283</a></li>
-      </ul>
+      <div class="container">
+          <div class="logo">
+            <img  src="css/img/mbm.png" width=245 height=50/>
+        </div>
+        <h3 class=work>Software Development <br>& ICT Consulting</h3>
+        <ul class="breadcrumb">
+            <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact From</a><span class="divider">|</span></li>
+            <li><a href="mailto:info@mbm.vn">Email</a> <span class="divider">|</span></li>
+            <li class="active"><a href="#">Phone: +84 710 3 834 283</a></li>
+        </ul>
+    </div>
     <div class="container">
     <h1 class="title">Careers</h1>
     <div class="content-middle">  <div class="node">
@@ -115,7 +139,8 @@
 
     <footer id="global-footer">
         <div class="container">
-            <div class="col-lg-6 address">
+            <div class="row-fluid">
+            <div class="span6 address">
                 <p>
                 MBM International<br>
                 Công ty TNHH Thương Mại Dịch Vụ Truyền Thông Mắt Biếc<br>
@@ -123,13 +148,14 @@
                 9000 Can Tho City, Vietnam
                 </p>
             </div>
-            <div class="col-lg-6 contact">
+            <div class="span6 contact">
                 <p>
                 Phone: +84 710 3 834 283<br>
                 Fax: +49 3 21 21 21 89 71<br>
                 Email: <a href="mailto:info@mbm.vn">info@mbm.vn</a>
                 </p>
             </div>
+        </div>
         </div>
     <nav id="footer-nav" role="navigation">
         <ul id="footer-menu">
@@ -159,7 +185,14 @@
         $(document).ready(function(){
 				//$(".contact").colorbox();
                 $(".contact").colorbox({iframe:true, width:"440px", height:"550px"});
+
 			});
+    !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
     </script>
   </body>
 </html>

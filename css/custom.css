@@ -2,12 +2,17 @@
  *Custom CSS
  *
  */
+ .logo{
+ display:inline-block;
+ vertical-align:top;margin-top:10px;margin-bottom:60px;margin-right:20px}
 .work {
   display: inline-block;
-  color: #2577a2; }
-
+  color: #2577a2;
+  margin:0;
+  line-height:45px;
+  vertical-align:top}
 .breadcrumb {
-  background-color: white; }
+  background-color: white;display:inline-block }
 
 .row {
   background-color: #134f5c;
@@ -62,8 +67,8 @@ footer .address, footer .contact, footer .footer-menu {
   color: #e2edf2;
   background: inherit; }
 
-.jumbotron {
-  margin-bottom: 0 !important; }
+.hero-unit {
+  margin-top:40px;margin-bottom: 0 !important; border-radius:none;-webkit-border-radius:0;-moz-border-radius:0}
 
 .careers a {
   padding-right: 0 !important; }
@@ -75,4 +80,5 @@ footer .address, footer .contact, footer .footer-menu {
   padding: 10px; }
 
 .contact a {
-  color: #5a5a5a; }
+  color: #999999; }
+.contact p, .address p{color:#999999}
