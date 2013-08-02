@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="{{ site.baseurl }}/css/img/mbm.ico" type="image/x-icon" />
     <meta name="author" content="">
 
-    <title>{{ site.name }}</title>
+    <title>{{ site.name }} </title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ site.baseurl }}/css/bootstrap.css" rel="stylesheet">
@@ -37,10 +37,10 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="{{ site.baseurl }}">Home</a></li>
-                <li><a href="{{ site.baseurl }}/about">About</a></li>
+                <li {% if page.title == '' %} class='active' {% endif %}><a href="{{ site.baseurl }}">Home</a></li>
+                <li {% if page.title == 'About' %} class='active' {% endif %} ><a href="{{ site.baseurl }}/about">About</a></li>
                 <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact</a></li>
-                <li class='careers' ><a href="{{ site.baseurl }}/careers">Careers</a></li>
+                <li {% if page.title == 'Careers' %} class='active' {% endif %} ><a href="{{ site.baseurl }}/careers">Careers</a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
@@ -58,7 +58,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Interview</h1>
-              <p>Software Development and Outsourcing, Supporting your business with developers adapted to a global workflow - Development, Web, Mobile, Desktop, Hardware,...</p>
+              <p class="lead">Software Development and Outsourcing, Supporting your business with developers adapted to a global workflow - Development, Web, Mobile, Desktop, Hardware,...</p>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Technologies</h1>
-              <p>iOS, Android, PHP, Python, Ruby on Rails, Java, Javascript, Objective C, Linux, lubuntu, OpenWrt, HTML5, OpenStreetMap, C/C++, Git, Scala.</p>
+              <p class="lead">iOS, Android, PHP, Python, Ruby on Rails, Java, Javascript, Objective C, Linux, lubuntu, OpenWrt, HTML5, OpenStreetMap, C/C++, Git, Scala.</p>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Security</h1>
-              <p>Crypto Stick, Gnuk, OpenSC</p>
+              <p class="lead">Crypto Stick, Gnuk, OpenSC</p>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Frameworks</h1>
-              <p>Drupal, Wordpress, Joomla, CakePHP, Yii, Django, Bootstrap, CodeIgniter</p>
+              <p class="lead">Drupal, Wordpress, Joomla, CakePHP, Yii, Django, Bootstrap, CodeIgniter</p>
             </div>
           </div>
         </div>
