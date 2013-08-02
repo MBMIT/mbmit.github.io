@@ -5,7 +5,7 @@ safe:        true
 auto:        true
 server:      false
 server_port: 4000
-baseurl: http://vanhonit.github.io/vanhonit/
+baseurl: http://vanhonit.github.io/vanhonit
 
 source:      .
 destination: ./_site
