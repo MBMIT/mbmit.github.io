@@ -39,7 +39,7 @@
               <ul class="nav">
                 <li {% if page.title == 'Index' %} class='active' {% endif %}><a href="{{ site.baseurl }}">Home</a></li>
                 <li {% if page.title == 'About' %} class='active' {% endif %} ><a href="{{ site.baseurl }}/about">About</a></li>
-                <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact</a></li>
+                <li><a class='contact-form' href="http://78.46.161.20:9880/contact">Contact</a></li>
                 <li {% if page.title == 'Careers' %} class='active' {% endif %} ><a href="{{ site.baseurl }}/careers">Careers</a></li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -64,8 +64,8 @@
             </div>
             <div class="span6 contact">
                 <p>
-                Phone: +84 710 3 834 283<br>
-                Fax: +49 3 21 21 21 89 71<br>
+                Phone: <a href='tel:+84 710 3 834 283'>+84 710 3 834 283</a><br>
+                Fax: <a href='fax:+49 3 21 21 21 89 71'>+49 3 21 21 21 89 71</a><br>
                 Email: <a href="mailto:info@mbm.vn">info@mbm.vn</a>
                 </p>
             </div>
@@ -76,7 +76,7 @@
              <ul  id="footer-menu" >
                     <li><a href="{{ site.baseurl }}" >Home</a></li>
                     <li><a href="{{ site.baseurl }}/about" >About</a></li>
-                    <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact</a></li>
+                    <li><a class='contact contact-form' href="http://78.46.161.20:9880/contact">Contact</a></li>
                     <li class='careers' ><a href="{{ site.baseurl }}/careers">Careers</a></li>
                 </ul>
         </ul>
@@ -98,7 +98,7 @@
     <script>
         $(document).ready(function(){
 				//$(".contact").colorbox();
-                $(".contact").colorbox({iframe:true, width:"440px", height:"550px"});
+                $(".contact-form").colorbox({iframe:true, width:"440px", height:"550px"});
 
 			});
     !function ($) {

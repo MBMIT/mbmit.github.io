@@ -39,7 +39,7 @@
               <ul class="nav">
                 <li ><a href="">Home</a></li>
                 <li  class='active'  ><a href="/about">About</a></li>
-                <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact</a></li>
+                <li><a class='contact-form' href="http://78.46.161.20:9880/contact">Contact</a></li>
                 <li  ><a href="/careers">Careers</a></li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -59,9 +59,9 @@
         </div>
         <h3 class=work>Software Development <br>& ICT Consulting</h3>
         <ul class="breadcrumb">
-            <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact From</a><span class="divider">|</span></li>
-            <li><a href="mailto:info@mbm.vn">Email</a> <span class="divider">|</span></li>
-            <li class="active"><a href="#">Phone: +84 710 3 834 283</a></li>
+            <li><a class='contact contact-form' href="http://78.46.161.20:9880/contact">Contact From</a><span class="divider">|</span></li>
+            <li><a class='email' href="mailto:info@mbm.vn">Email</a> <span class="divider">|</span></li>
+            <li class="active"><a class='phone' href="tel:+84 710 3 834 283">Phone: +84 710 3 834 283</a></li>
         </ul>
 </div>
 <div class="about container">
@@ -121,8 +121,8 @@
             </div>
             <div class="span6 contact">
                 <p>
-                Phone: +84 710 3 834 283<br>
-                Fax: +49 3 21 21 21 89 71<br>
+                Phone: <a href='tel:+84 710 3 834 283'>+84 710 3 834 283</a><br>
+                Fax: <a href='fax:+49 3 21 21 21 89 71'>+49 3 21 21 21 89 71</a><br>
                 Email: <a href="mailto:info@mbm.vn">info@mbm.vn</a>
                 </p>
             </div>
@@ -133,7 +133,7 @@
              <ul  id="footer-menu" >
                     <li><a href="" >Home</a></li>
                     <li><a href="/about" >About</a></li>
-                    <li><a class='contact' href="http://78.46.161.20:9880/contact">Contact</a></li>
+                    <li><a class='contact contact-form' href="http://78.46.161.20:9880/contact">Contact</a></li>
                     <li class='careers' ><a href="/careers">Careers</a></li>
                 </ul>
         </ul>
@@ -155,7 +155,7 @@
     <script>
         $(document).ready(function(){
 				//$(".contact").colorbox();
-                $(".contact").colorbox({iframe:true, width:"440px", height:"550px"});
+                $(".contact-form").colorbox({iframe:true, width:"440px", height:"550px"});
 
 			});
     !function ($) {
