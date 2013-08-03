@@ -116,39 +116,6 @@ endColorstr='#8a8a8a');
 	top:1px;
 }
 .email{
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:-webkit-gradient( linear, left top, left bottom,
-color-stop(0.05, #8a8a8a), color-stop(1, #dfdfdf) );
-	background:-moz-linear-gradient( center top, #8a8a8a 5%, #dfdfdf 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a8a8a',
-endColorstr='#dfdfdf');
-	background-color:#8a8a8a;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	color:#777777;
-	font-family:Trebuchet MS;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #ffffff;
-}.email:hover {
-	background:-webkit-gradient( linear, left top, left bottom,
-color-stop(0.05, #dfdfdf), color-stop(1, #8a8a8a) );
-	background:-moz-linear-gradient( center top, #dfdfdf 5%, #8a8a8a 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf',
-endColorstr='#8a8a8a');
-	background-color:#dfdfdf;
-}.email:active {
-	position:relative;
-	top:1px;
-}
-.phone {
 	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
 	box-shadow:inset 0px 0px 0px 0px #ffffff;
@@ -170,14 +137,80 @@ endColorstr='#f2f2f2');
 	padding:5px 15px;
 	text-decoration:none;
 	text-shadow:1px 1px 2px #ffffff;
-}.phone:hover {
+}.email:hover {
 	background:-webkit-gradient( linear, left top, left bottom,
 color-stop(0.05, #f2f2f2), color-stop(1, #c7c7c7) );
 	background:-moz-linear-gradient( center top, #f2f2f2 5%, #c7c7c7 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2',
 endColorstr='#c7c7c7');
 	background-color:#f2f2f2;
-}.phone:active {
+}.email:active {
+	position:relative;
+	top:1px;
+}
+.phone-germany {
+	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom,
+color-stop(0.05, #c7c7c7), color-stop(1, #f2f2f2) );
+	background:-moz-linear-gradient( center top, #c7c7c7 5%, #f2f2f2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7c7c7',
+endColorstr='#f2f2f2');
+	background-color:#c7c7c7;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #a897a8;
+	display:inline-block;
+	color:#3d383d;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 2px #ffffff;
+}.phone-germany:hover {
+	background:-webkit-gradient( linear, left top, left bottom,
+color-stop(0.05, #f2f2f2), color-stop(1, #c7c7c7) );
+	background:-moz-linear-gradient( center top, #f2f2f2 5%, #c7c7c7 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2',
+endColorstr='#c7c7c7');
+	background-color:#f2f2f2;
+}.phone-germany:active {
+	position:relative;
+	top:1px;
+}
+.phone-vn {
+	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+	box-shadow:inset 0px 0px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom,
+color-stop(0.05, #c7c7c7), color-stop(1, #f2f2f2) );
+	background:-moz-linear-gradient( center top, #c7c7c7 5%, #f2f2f2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7c7c7',
+endColorstr='#f2f2f2');
+	background-color:#c7c7c7;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #a897a8;
+	display:inline-block;
+	color:#3d383d;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 2px #ffffff;
+}.phone-vn:hover {
+	background:-webkit-gradient( linear, left top, left bottom,
+color-stop(0.05, #f2f2f2), color-stop(1, #c7c7c7) );
+	background:-moz-linear-gradient( center top, #f2f2f2 5%, #c7c7c7 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2',
+endColorstr='#c7c7c7');
+	background-color:#f2f2f2;
+}.phone-vn:active {
 	position:relative;
 	top:1px;
 }
