@@ -1,4 +1,4 @@
-vanhonit
+MBM Website
 ========
 
-Test github page
+Site created with Jekyll
