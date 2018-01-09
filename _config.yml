@@ -1,0 +1,8 @@
+title: MBM International
+description: Make Your Ideas Work // We have a track record of successful projects with top level international corporations and startups. With our resources we support partners and customers with software development, hardware development, consulting and research services around the world. We are dedicated to make your ideas work. //
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
